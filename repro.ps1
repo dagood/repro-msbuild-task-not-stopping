@@ -2,4 +2,4 @@ pushd corefx
 & .\init-tools.cmd
 popd
 
-.\corefx\Tools\dotnetcli\dotnet msbuild /v:N /m /bl
+.\corefx\Tools\dotnetcli\dotnet msbuild /v:N /bl
