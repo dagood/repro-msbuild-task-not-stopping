@@ -20,9 +20,6 @@
              Properties="DefaultBuildAllTarget=$(DefaultBuildAllTarget);BuildAllProjects=true;BuildConfiguration=$(BuildConfiguration);%(Project.AdditionalProperties)"
              BuildInParallel="true"
              ContinueOnError="ErrorAndStop" />
-
-    <!-- Given we ErrorAndContinue we need to propagate the error if the overall task failed -->
-    <Error Condition="'$(MSBuildLastTaskResult)'=='false'" />
   </Target>
 
   <PropertyGroup>
